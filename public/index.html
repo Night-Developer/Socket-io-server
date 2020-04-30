@@ -1,0 +1,8 @@
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io();
+
+  socket.on('USUARIO_RECIVIDO', function(params) {
+    alert('ID Cliente: ' + params['client_id']);
+  })    
+</script>
